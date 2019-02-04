@@ -1,6 +1,6 @@
-class CreateAddForeignKeysToRide < ActiveRecord::Migration
+class AddForeignKeysToRide < ActiveRecord::Migration
   def change
-    create_table :add_foreign_keys_to_rides do |t|
-    end
+    add_column :rides, :passenger_id, :integer
+    add_column :rides, :taxi_id, :integer
   end
 end
